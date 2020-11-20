@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="/Users/rdykiel/ws-voltdb/kafka-connect-volt/lib/connect-api-5.5.1-ce.jar"/>
-	<classpathentry kind="lib" path="/Users/rdykiel/ws-voltdb/kafka-connect-volt/lib/kafka-clients-5.5.1-ce.jar"/>
-	<classpathentry kind="lib" path="/Users/rdykiel/ws-voltdb/kafka-connect-volt/lib/slf4j-api-1.7.30.jar"/>
+	<classpathentry kind="lib" path="lib/connect-api-5.5.1-ce.jar"/>
+	<classpathentry kind="lib" path="lib/kafka-clients-5.5.1-ce.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.30.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
