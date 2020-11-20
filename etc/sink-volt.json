@@ -1,0 +1,11 @@
+{
+  "name" : "sink-volt",
+  "config" : {
+    "connector.class" : "org.voltdb.kafka.connect.sink.VoltSinkConnector",
+    "key.converter": "org.voltdb.kafka.connect.common.ByteArrayConverter",
+    "value.converter": "org.voltdb.kafka.connect.common.ByteArrayConverter",
+    "tasks.max" : "1",
+    "topics" : "volt1,volt2",
+    "volt.listeners" : "localhost:9095"
+  }
+}

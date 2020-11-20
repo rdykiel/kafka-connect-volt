@@ -1,0 +1,12 @@
+{
+  "name" : "source-volt",
+  "config" : {
+    "connector.class" : "org.voltdb.kafka.connect.source.VoltSourceConnector",
+    "key.converter": "org.voltdb.kafka.connect.common.ByteArrayConverter",
+    "value.converter": "org.voltdb.kafka.connect.common.ByteArrayConverter",
+    "tasks.max" : "1",
+    "volt.topics" : "volt1,volt2",
+    "volt.kafka.prefix" : "loop_",
+    "volt.listeners" : "localhost:9095"
+  }
+}
