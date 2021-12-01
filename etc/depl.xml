@@ -6,17 +6,8 @@
     <avro registry="http://localhost:8081" namespace="" />
     <systemsettings>
     </systemsettings>
-    <topics enabled="true">
-      <properties>
-        <property name="port">9095</property>
-      </properties>
-      <profiles>
-        <profile name="compact">
-          <retention policy="compact" limit="4" />
-        </profile>
-        <profile name="time">
-          <retention policy="time" limit="4 mn" />
-        </profile>
-      </profiles>
+    <topics enabled="true" >
+      <topic name="volt1" procedure="VOLT1.insert" format="csv" retention="4 mn" />
+      <topic name="volt2" procedure="VOLT2.insert" format="avro" retention="4 mn" />
     </topics>
 </deployment>
